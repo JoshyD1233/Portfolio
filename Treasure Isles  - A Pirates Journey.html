@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    /* Titillium Font */
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+    /* Website Tab Text */
+    <title>Josh Davies // Portfolio // Treasure Isles</title>
+
+    <style>
+        body {
+            background-color: #071136; 
+            background-size: auto; 
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+            z-index: 0;
+            font-family: "Titillium Web", sans-serif;
+        }
+
+        
+        
+        #banner h1 {
+            margin: 0%;
+            font-size: 80px;
+            color: white;
+        }
+        #banner h2 {
+            padding-left: 200px;   
+            padding-bottom: 65px;    
+            margin: -1%;
+            font-size: 30px;
+            color: #8B7740;
+        }
+
+        /* Banner Dimensions */        
+
+        #banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+
+            background-image: url('JoshPortfolioImages/Home Page/Portfolio Hero Banner.png');
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            transition: transform 0.4s ease;
+            z-index: 1000;
+        }
+
+        /* Hidden state */
+
+        #banner.hide {
+            transform: translateY(-100%);
+        }
+
+       .invisible-home-link {
+            position: absolute;
+            top: 0%;
+            left: 37%;
+            width: 500px; 
+            height: 80%;
+            background:transparent; 
+            cursor: pointer;
+        }         
+
+        .center-box {
+            width: 50%;
+            max-width: 960px;
+            min-width: 350px;
+            min-height: 100vh;        
+            margin: 0 auto;           
+            background: #15204a;      
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+
+        .content-text h1 {
+            margin: 0%;
+            margin-top: 20%;
+            color: white;
+            font-size: 40px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+
+        .content-text h2 {
+            margin: 0%;
+            color: #8B7740;
+            font-size: 15px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+
+         .content-text h3 {
+            margin: 0%;
+            margin-top: 5%;
+            color: white;
+            font-size: 40px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+
+        .content-text h4 {
+            margin: 0%;
+            margin-top: 5%;
+            color: white;
+            font-size: 40px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+
+        .content-text h5 {
+            margin: 0%;
+            margin-top: 5%;
+            color: white;
+            font-size: 40px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+        
+
+         .content-text p {
+            align-items: left;
+            margin: 1%;
+            color: #c6c6c6;
+            padding-left: 150px;
+            padding-right: 130px;
+        }  
+
+         .content-text li {
+            list-style-position: inside;
+            align-items: left;
+            margin: 1%;
+            color: #c6c6c6;
+            padding-left: 150px;
+            padding-right: 130px;
+        }  
+  
+        .content-bigimage {
+            display: flex;             
+            flex-direction: column;     
+            align-items: center;        
+            justify-content: center;    
+            padding-bottom: 5px;
+            padding-top: 5px;
+            gap: 5px;
+        }
+
+        .content-imagerow {
+            display: flex;             
+            flex-direction: row;     
+            align-items: center;        
+            justify-content: center;     
+            gap: 5px;
+            padding-bottom: 5px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 800px; 
+            width: 100%;
+            padding-left: 150px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .content-BackButton {
+            display: block; 
+            width: 67.5%;
+            height: 40px;
+            margin: 0 auto; 
+            margin-top: 80px;
+            background: #8B7740;
+            position: relative;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="banner">
+        <h1>Josh Davies</h1>
+        <h2>Level Designer</p>
+
+     <div class="header-container">
+
+    <a href="/" class="invisible-home-link" title="Go to Homepage"></a>
+
+    </div>
+        
+    </div>
+
+    <div class= "center-box"> 
+
+      <div class= "content-text"> 
+        <h1>Treasure Isles</h1>
+        <h2>Single Player, Pirate Platformer</h2>
+        <p>Treasure isles is a pirate platformer that sees the player play as a pirate navigating multiple different levels saving animals. I was brought onto this project
+            as a 3D Artist contractor to create decorative models for the game.</p>
+
+        <h3>The Models</h3>
+
+        <p> Below is a collage of the models that I created:</p>
+
+        <div class= "content-imagerow"> 
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Houses.png" alt="Treasure Islands Houses" 
+       width="200" height="150">
+       <img 
+       style="width: 23%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Mug.png" 
+       alt="Treasure Islands Mug" width="200" height="150">
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Boxes.png" 
+       alt="Treasure Islands Boxes" width="200" height="150">
+       </div>
+
+       <div class= "content-imagerow"> 
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"  
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Campsite.png" 
+       alt="Treasure Islands Houses" width="200" height="150">
+       <img 
+       style="width: 23%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Crab.png" 
+       alt="Treasure Islands Mug" width="200" height="150">
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"  
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Fences.png" 
+       alt="Treasure Islands Boxes" width="200" height="150">
+       </div>
+
+       <div class= "content-imagerow"> 
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Grass.png" 
+       alt="Treasure Islands Grass" width="200" height="150">
+       <img 
+       style="width: 23%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Ladder.png" 
+       alt="Treasure Islands Ladder" width="200" height="150">
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - PalmTree.png" 
+       alt="Treasure Islands PalmTree" width="200" height="150">
+       </div>
+
+       <div class= "content-imagerow"> 
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Ship.png" 
+       alt="Treasure Islands Ship" width="200" height="150">
+       <img 
+       style="width: 23%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Raft.png" 
+       alt="Treasure Islands Raft" width="200" height="150">
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Rocks.png" 
+       alt="Treasure Islands Rocks" width="200" height="150">
+       </div>
+
+       <div class= "content-imagerow"> 
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Net.png" 
+       alt="Treasure Islands Net" width="200" height="150">
+       <img 
+       style="width: 23%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Anchor.png" 
+       alt="Treasure Islands Anchor" width="200" height="150">
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Spades.png" 
+       alt="Treasure Islands Spades" width="200" height="150">
+       </div>
+
+       <div class= "content-imagerow"> 
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Telescope.png" 
+       alt="Treasure Islands Telescope" width="200" height="150">
+       <img 
+       style="width: 23%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - TelescopeStand.png" 
+       alt="Treasure Islands TelescopeStand" width="200" height="150">
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Chest.png" 
+       alt="Treasure Islands Chest" width="200" height="150">
+       </div>
+
+       <h4>Examples In-Game</h4>
+
+       <div class= "content-bigimage"> 
+        <img 
+        style="width: 68%; height: auto; max-height: 300px; display: block; border: 5px solid #000000; box-sizing: border-box;"  
+        src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Example1.png" 
+        alt="TreasureIsles Example1" width="630" height="300">
+        </div>
+
+        <div class= "content-bigimage"> 
+        <img 
+        style="width: 68%; height: auto; max-height: 300px; display: block; border: 5px solid #000000; box-sizing: border-box;"  
+        src="JoshPortfolioImages/Treasure Isles/Treasure Islands - Example2.png" 
+        alt="TreasureIsles Example2" width="630" height="300">
+        </div>
+
+        <h5>Trailer</h5>
+
+        <div class="video-container">
+        <iframe width="560" height="315"
+         src="https://www.youtube.com/embed/wWsX3yos9hY"
+         title="YouTube video player"
+         frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen>
+        </iframe>
+        </div>
+
+        <button type="button" onclick="location.href='index.html'" class="content-BackButton"><b>BACK TO RECENT PROJECTS</b></button>
+     
+    </div>   
+
+     
+
+    <script>
+        const banner = document.getElementById("banner");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 50) {
+                banner.classList.add("hide");
+            } else {
+                banner.classList.remove("hide");
+            }
+        });
+    </script>
+
+</body>
+</html>

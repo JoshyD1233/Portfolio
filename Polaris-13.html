@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    /* Titillium Font */
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+    /* Website Tab Text */
+    <title>Josh Davies // Portfolio // Polaris-13</title>
+
+    <style>
+        body {
+            background-color: #071136; 
+            background-size: auto; 
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+            z-index: 0;
+            font-family: "Titillium Web", sans-serif;
+        }
+
+        /* Banner Text */
+        
+        #banner h1 {
+            margin: 0%;
+            font-size: 80px;
+            color: white;
+        }
+        #banner h2 {
+            padding-left: 200px;   
+            padding-bottom: 65px;    
+            margin: -1%;
+            font-size: 30px;
+            color: #8B7740;
+        }
+
+        /* Banner Dimensions */        
+
+        #banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+
+            background-image: url('JoshPortfolioImages/Home Page/Portfolio Hero Banner.png');
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            transition: transform 0.4s ease;
+            z-index: 1000;
+        }
+
+        /* Hidden state */
+
+        #banner.hide {
+            transform: translateY(-100%);
+        }
+
+       .invisible-home-link {
+            position: absolute;
+            top: 0%;
+            left: 37%;
+            width: 500px; 
+            height: 80%;
+            background:transparent; 
+            cursor: pointer;
+        }         
+
+        .center-box {
+            width: 50%;
+            max-width: 960px;
+            min-width: 350px;
+            min-height: 100vh;        
+            margin: 0 auto;           
+            background: #15204a;      
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+
+        .content-text h1 {
+            margin: 0%;
+            margin-top: 20%;
+            color: white;
+            font-size: 40px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+
+        .content-text h2 {
+            margin: 0%;
+            color: #8B7740;
+            font-size: 15px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+
+         .content-text h3 {
+            margin: 0%;
+            margin-top: 5%;
+            color: white;
+            font-size: 40px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+
+        .content-text h4 {
+            margin: 0%;
+            margin-top: 5%;
+            color: white;
+            font-size: 40px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+
+        .content-text h5 {
+            margin: 0%;
+            margin-top: 5%;
+            color: white;
+            font-size: 40px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+
+        .content-text h6 {
+            margin: 0%;
+            margin-top: 5%;
+            color: white;
+            font-size: 40px;
+            padding-left: 155px;
+            padding-right: 200px;
+            align-items: left;
+        }
+        
+
+         .content-text p {
+            align-items: left;
+            margin: 1%;
+            color: #c6c6c6;
+            padding-left: 150px;
+            padding-right: 130px;
+        }  
+
+         .content-text li {
+            list-style-position: inside;
+            align-items: left;
+            margin: 1%;
+            color: #c6c6c6;
+            padding-left: 150px;
+            padding-right: 130px;
+        }  
+  
+        .content-bigimage {
+            display: flex;             
+            flex-direction: column;     
+            align-items: center;        
+            justify-content: center;    
+            padding-bottom: 5px;
+            padding-top: 5px;
+            gap: 5px;
+        }
+
+        .content-imagerow {
+            display: flex;             
+            flex-direction: row;     
+            align-items: center;        
+            justify-content: center;     
+            gap: 5px;
+            padding-bottom: 5px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 800px; 
+            width: 100%;
+            margin: auto;
+  
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .content-ViewProject {
+            display: block; 
+            width: 67.5%;
+            height: 40px;
+            margin: 0 auto; 
+            background: #8B7740;
+            position: relative;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .content-BackButton {
+            display: block; 
+            width: 67.5%;
+            height: 40px;
+            margin: 0 auto; 
+            margin-top: 80px;
+            background: #8B7740;
+            position: relative;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="banner">
+        <h1>Josh Davies</h1>
+        <h2>Level Designer</p>
+
+     <div class="header-container">
+
+    <a href="/" class="invisible-home-link" title="Go to Homepage"></a>
+
+    </div>
+        
+    </div>
+
+    <div class= "center-box"> 
+
+      <div class= "content-text"> 
+        <h1>Polaris-13</h1>
+        <h2>Single Player & Online Multiplayer, Survival Space Game</h2>
+        <p>This project saw me take on the primary role of Level Designer within my team 'Absolute Entertainment'. As the game's spaceship is the central focus of the game, a large portion of my time
+            was spent planning, designing and laying out the ship's internals and its subsequent 10 rooms. Alongside this I planned out and designed the tutorial level. Other responsibilities
+             I held within this project include:</p>
+        <li>Creation of the game's Points Of Interest - 5 total</li>
+        <li>Designing and Implementing the Crafting System into Unity</li>
+        <li>Helped set up Player Animation through Unity's Animation Tree</li>
+        <li>Assisted in Texturing 3D models - Primarily for craftable items</li>
+        <li>Modelled, Textured and set up the lighting in both the Ship and the Points Of Interest</li>
+        <h3>Ship Internal Design</h3>
+
+     <div class= "content-bigimage"> 
+       <img 
+       style="width: 68%; height: auto; max-height: 300px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Bedroom.png" 
+       alt="Polaris-13 Bedroom" width="630" height="300"> 
+       <img 
+       style="width: 68%; height: auto; max-height: 300px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Crafting Room.png" 
+       alt="Polaris-13 Crafting Room" width="630" height="300">
+       <img 
+       style="width: 68%; height: auto; max-height: 300px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Storage Area.png" 
+       alt="Polaris-13 Storage Area" width="630" height="300">
+    
+       <p>This is a handful of images that showcase a few of the rooms within the ship that I designed. When creating these rooms creating a futuristic but easily recognisable environment was key
+        in order to effectively immerse the player within the space. The environent was also designed with the game's low poly style in mind.</p>
+     </div>
+
+     <h4>Tutorial Level</h4>
+
+     <div class= "content-bigimage"> 
+       <img 
+       style="width: 68%; height: auto; max-height: 300px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Tutorial Room 1.png" 
+       alt="Polaris-13 Tutorial Room 1" width="630" height="300"> 
+       <img 
+       style="width: 68%; height: auto; max-height: 300px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Hallway.png" 
+       alt="Polaris-13 Tutorial Hallway" width="630" height="300">
+       <img 
+       style="width: 68%; height: auto; max-height: 300px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Outside.png" 
+       alt="Polaris-13 Tutorial Outside" width="630" height="300">
+     </div>
+
+       <p>The Tutorial Level is designed to highlight the game's most important mechanics to the player. These include:</p>
+       <li>Player Movement - Both with and without gravity</li>
+       <li>Interactable Objects - Chests containing items and how to add them to their inventory</li>
+       <li>Collecting/Crafting with resources - Turning items into something new</li>
+       <li>Equipable Items - Using weapons/tools </li>
+       <p>The tutorial itself takes roughly 5 - 10 minutes to complete based on the players skill level. Giving the player a breif showcase of the most
+        critical mechanics within the game allows them to take in the environments designed in the main game without feeling overwhelmed.</p>
+
+     <h5>Points Of Interest</h5>
+
+     <div class= "content-imagerow"> 
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Orbit Puzzle.png" alt="Polaris-13 Orbit Puzzle" 
+       width="200" height="150"> 
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Space Ship Ruins.png" 
+       alt="Polaris-13 Space Ship Ruins" width="200" height="150">
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;" 
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Meteor Building.png" 
+       alt="Polaris-13 Meteor Building" width="200" height="150" >
+     </div>
+
+     <div class= "content-imagerow"> 
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Parkour Islands.png" 
+       alt="Polaris-13 Parkour Islands" width="200" height="150"> 
+       <img 
+       style="width: 22%; height: auto; min-height: 150px; max-height: 150px; display: block; border: 5px solid #000000; box-sizing: border-box;"
+       src="JoshPortfolioImages/Polaris - 13/Polaris 13 - Goober Asteroid.png" 
+       alt="Polaris-13 Goober Asteroid" width="200" height="150" >
+     </div>
+     <p>The Points of Interest are key locations that can be found by players often through portals that spawn around the ship amongst the debris.
+        They offer a mix of different encounter types with some including skill based challenges such as parkour and others being more exploration driven
+        these points of interest consist of:</p>
+     <li>Orbit Puzzle - A puzzle that blends both gravity and anti-gravity movement to navigate orbiting debris with loot being rewarded in the center.</li>
+     <li>Space Ship Ruins - An exploration driven encounter that has hidden chests for players to discover as well as enemies to evade</li>
+     <li>Meteor Building - A building in disaray that gives the player more information on the game's background story as well as items and loot </li>
+     <li>Parkour Islands - A challenging anti-gravity parkour experience that requires player awareness to avoid floating meteors and rewards the players with
+        high tier loot</li>
+     <li>Goober Asteroid - An asteroid that can spawn alongside the ship covered in enemies and does not give the player any form of positive reward</li>
+     <p>While creating the points of interest I wanted to create a diverse set of experiences that kept each encounter unique and prevented the points of interest from
+        feeling similar to each other. </p>
+
+     <h6>Trailer</h6>
+
+     <div class="video-container">
+     <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/rl6RvuGJTJE"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    </div> 
+
+    <button type="button" onclick="location.href='index.html'" class="content-BackButton"><b>BACK TO RECENT PROJECTS</b></button>
+     
+    </div>   
+
+     
+
+    <script>
+        const banner = document.getElementById("banner");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 50) {
+                banner.classList.add("hide");
+            } else {
+                banner.classList.remove("hide");
+            }
+        });
+    </script>
+
+</body>
+</html>
